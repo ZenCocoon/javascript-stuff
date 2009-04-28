@@ -1,6 +1,6 @@
 Form.GhostedField = Class.create({
   initialize: function(element, title, options) {
-    this.element = $(element);
+    if (!(this.element = $(element))) return;
     this.title = title;
     
     this.isGhosted = true;
